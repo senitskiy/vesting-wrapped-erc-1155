@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Library that provide common ERC-1155 utility functions. See https://eips.ethereum.org/EIPS/eip-1155[ERC-1155].",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/ERC1155/utils/ERC1155Utils.sol": "ERC1155Utils"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/draft-IERC6093.sol": {
+			"keccak256": "0x9cac1f97ecc92043dd19235d6677e40cf6bac382886a94f7a80a957846b24229",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a1e0c924e0edfdfd4abceeb552d99f1cd95c0d387b38ccb1f67c583607e3d155",
+				"dweb:/ipfs/QmZAi6qKa66zuS3jyEhsQR9bBNnZe1wSognYqw9nvseyUz"
+			]
+		},
+		"contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0xc859863e3bda7ec3cddf6dafe2ffe91bcbe648d1395b856b839c32ee9617c44c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a9d5417888b873cf2225ed5d50b2a67be97c1504134a2a580512168d587ad82e",
+				"dweb:/ipfs/QmNr5fTb2heFW658NZn7dDnofZgFvQTnNxKRJ3wdnR1skX"
+			]
+		},
+		"src/ERC1155/IERC1155Receiver.sol": {
+			"keccak256": "0xef8c0422104016b078c3f9049a62a4277916ae69d6943194a240f4d6fcbffaba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fcf88ab570abe50fa681be131c7b1bb0cb04d87a64be4a69fa83010f042cb0e6",
+				"dweb:/ipfs/QmasrmgEuUn81of4PoZZgo6mc1zbNmf9Us2nZ8De5RfTbM"
+			]
+		},
+		"src/ERC1155/utils/ERC1155Utils.sol": {
+			"keccak256": "0x3bb8ba8f9a4f42fe3c1a96ad02b6c79a0c5f0e9f09e2838f950944e601923ce7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://119c8abbfe0b26c3d5caa3de2074c699112f5413d9a4df1c9495e101ab925050",
+				"dweb:/ipfs/QmYXiFTV5bnKz4UTm27Kgtsij7J7PENiHYxsDVvgtuLpB6"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "FailedDeployment",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "needed",
+						"type": "uint256"
+					}
+				],
+				"name": "InsufficientBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "baseToken",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "cliff",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "endTime",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "portion",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Schedule[]",
+								"name": "schedule",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Vesting",
+						"name": "vesting",
+						"type": "tuple"
+					}
+				],
+				"name": "createVesting",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "vestingToken",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Код предоставлен исключительно в ознакомительных целях и не протестирован Из контракта убрано все лишнее, включая некоторые проверки, геттеры/сеттеры и события",
+			"errors": {
+				"FailedDeployment()": [
+					{
+						"details": "The deployment failed."
+					}
+				],
+				"InsufficientBalance(uint256,uint256)": [
+					{
+						"details": "The ETH balance of the account is not enough to perform the operation."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {},
+			"title": "Контракт-фабрика для создания share-токенов",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"createVesting(string,string,address,address,(uint256,uint256,(uint256,uint256)[]))": {
+					"notice": "Основная функция для создания экземпляра share-токена Т.к. это создание ERC20 - задаем name и symbol Указываем адрес токена который будет блокироваться под вестинг Указываем адрес который сможет минтить share-токены (к примеру контракт продаж) Передаем расписание"
+				}
+			},
+			"notice": "Основная задача смарт-контракта создавать экземпляры share-токенов и устанавливать на них расписание вестинга",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/VestingManager.sol": "VestingManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/proxy/Clones.sol": {
+			"keccak256": "0x43dee2239d21ac5d9affbc5f93fe766b0aaea86145b2fd13c63beccbded073c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://155a189da3d56a207faf151c027dcaeb354de2e8aca40dbd6c73f9db7c480a75",
+				"dweb:/ipfs/QmNwzYrBuTeDaoaSRNoqFVuiaXuLsDpbyq2f9KYCaV3QNQ"
+			]
+		},
+		"contracts/utils/Errors.sol": {
+			"keccak256": "0x1b0625096e82d06abdcf1844172ef78ef54a5e878761f4d905fda07eaf098424",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5cd99f1a4836c07461cb3ea023ae2f6d1d01e80694b764a87623aa7252754756",
+				"dweb:/ipfs/QmNPNDuiNU6TJatZcdBcrwixBoo5MSXNDq4kaXhpJLWGpB"
+			]
+		},
+		"src/IVestingToken.sol": {
+			"keccak256": "0x2cad48b2342daf84c93169f521b5c77cbd621e1fbee9b4ac4e8ed10d01e0473f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8be3abb4136cb9c74775cc2642530d2777ad949044d55ab4affe10e533b1a298",
+				"dweb:/ipfs/QmNwMFhm1BvCEm2wxyf1ycfynrrwdkGP4e5C9Sdc2AdmU9"
+			]
+		},
+		"src/VestingManager.sol": {
+			"keccak256": "0xbc9fc31e96e126a7bf3c10ddfac271258255693af1d132125484f06068f0b1e9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5250e64b573d6142cc0283dada8f60f21fc553250f1449ffa83fdbe951161061",
+				"dweb:/ipfs/QmTZMc37VinJ2dZ4D59BCjHzMA5WeLnGKiJchLVERgABGW"
+			]
+		},
+		"src/console.sol": {
+			"keccak256": "0x3c7fbea1ec734627378b00b15076f072c2d4d9a53ca85bec0a4bcd6819e6e21d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e996460d2348939af78a3e5ad3e487eb6ac2ee626b91286cbc32a16b3420fe6d",
+				"dweb:/ipfs/QmPzq9bQj65pG3GkPq3pWWsbxLy4sh1MmnKp7WR5phD3rb"
+			]
+		}
+	},
+	"version": 1
+}
