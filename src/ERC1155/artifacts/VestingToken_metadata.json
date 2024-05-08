@@ -769,7 +769,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"src/ERC1155/VestingTokenERC1155.sol": "VestingToken"
+			"src/ERC1155/VestingToken.sol": "VestingToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -871,7 +871,7 @@
 				"dweb:/ipfs/Qmc3CpBfQ5Md3XGzDvj3F2CgGDHTfXF1WUzUkfA3BdHJMo"
 			]
 		},
-		"src/ERC1155/VestingTokenERC1155.sol": {
+		"src/ERC1155/VestingToken.sol": {
 			"keccak256": "0xd85c8f0a218afd1f0dd8502ea325965a5d79891bb6fe11f76461008f9475c961",
 			"license": "MIT",
 			"urls": [
