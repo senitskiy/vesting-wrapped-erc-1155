@@ -7,7 +7,7 @@ import {IERC20} from "../../../../contracts/token/ERC20/IERC20.sol";
 import {IERC20Metadata} from "../../../../contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import {ContextUpgradeable} from "../../utils/ContextUpgradeable.sol";
 import {IERC20Errors} from "../../../../contracts/interfaces/draft-IERC6093.sol";
-import {Initializable} from "../../../../contracts/proxy/utils/Initializable.sol";
+import {Initializable} from "../../proxy/utils/Initializable.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.

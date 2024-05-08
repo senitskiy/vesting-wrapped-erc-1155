@@ -2,9 +2,10 @@
 pragma solidity ^0.8.18;
 
 import {IERC20, SafeERC20} from "../contracts/token/ERC20/utils/SafeERC20.sol";
-import {Initializable} from "../contracts/proxy/utils/Initializable.sol";
+// import {Initializable} from "../contracts/proxy/utils/Initializable.sol";
+import {Initializable} from     "../upgradeable/contracts/proxy/utils/Initializable.sol";
 import {ERC20Upgradeable} from "../upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
-
+// import {ERC20} from "../contracts/token/ERC20/ERC20.sol";
 import {Vesting, Schedule} from "./IVestingToken.sol";
 
 /**
@@ -249,13 +250,13 @@ contract VestingToken is Initializable, ERC20Upgradeable {
     /**
      * @notice Трансферить токены нельзя, только минтить и сжигать
      */
-    function _beforeTokenTransfer(address from, address to, uint256 amount) internal override {
-        super._beforeTokenTransfer(from, to, amount);
+    // function _beforeTokenTransfer(address from, address to, uint256 amount) internal override {
+    //     super._beforeTokenTransfer(from, to, amount);
 
-        if (from != address(0) && to != address(0)) {
-            revert TransfersNotAllowed();
-        }
-    }
+    //     if (from != address(0) && to != address(0)) {
+    //         revert TransfersNotAllowed();
+    //     }
+    // }
 
     // endregion
 }

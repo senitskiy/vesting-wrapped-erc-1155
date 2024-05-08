@@ -6,7 +6,8 @@ pragma solidity ^0.8.20;
 import {IERC1155} from "./IERC1155.sol";
 import {IERC1155MetadataURI} from "./extensions/IERC1155MetadataURI.sol";
 import {ERC1155Utils} from "./utils/ERC1155Utils.sol";
-import {Context} from "../../utils/Context.sol";
+// import {Context} from "../../utils/Context.sol";
+import {ContextUpgradeable} from "../../../upgradeable/contracts/utils/ContextUpgradeable.sol";
 import {IERC165, ERC165} from "../../utils/introspection/ERC165.sol";
 import {Arrays} from "../../utils/Arrays.sol";
 import {IERC1155Errors} from "../../interfaces/draft-IERC6093.sol";
@@ -16,7 +17,7 @@ import {IERC1155Errors} from "../../interfaces/draft-IERC6093.sol";
  * See https://eips.ethereum.org/EIPS/eip-1155
  * Originally based on code by Enjin: https://github.com/enjin/erc-1155
  */
-abstract contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI, IERC1155Errors {
+abstract contract ERC1155 is ContextUpgradeable, ERC165, IERC1155, IERC1155MetadataURI, IERC1155Errors {
     using Arrays for uint256[];
     using Arrays for address[];
 

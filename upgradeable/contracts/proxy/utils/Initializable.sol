@@ -3,6 +3,7 @@
 
 pragma solidity ^0.8.20;
 
+import "./InitializableStorage.sol";
 /**
  * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed
  * behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an
@@ -62,16 +63,16 @@ abstract contract Initializable {
      *
      * @custom:storage-location erc7201:openzeppelin.storage.Initializable
      */
-    struct InitializableStorage {
-        /**
-         * @dev Indicates that the contract has been initialized.
-         */
-        uint64 _initialized;
-        /**
-         * @dev Indicates that the contract is in the process of being initialized.
-         */
-        bool _initializing;
-    }
+    // struct InitializableStorage {
+    //     /**
+    //      * @dev Indicates that the contract has been initialized.
+    //      */
+    //     uint64 _initialized;
+    //     /**
+    //      * @dev Indicates that the contract is in the process of being initialized.
+    //      */
+    //     bool _initializing;
+    // }
 
     // keccak256(abi.encode(uint256(keccak256("openzeppelin.storage.Initializable")) - 1)) & ~bytes32(uint256(0xff))
     bytes32 private constant INITIALIZABLE_STORAGE = 0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00;

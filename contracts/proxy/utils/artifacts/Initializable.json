@@ -34,20 +34,33 @@
 			"functionDebugData": {},
 			"generatedSources": [],
 			"linkReferences": {},
-			"object": "",
-			"opcodes": "",
-			"sourceMap": ""
+			"object": "6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea26469706673582212203e358fdb1c4442fe2655e03f008b6cfc7ea4d552a92d27e8571e5d5192d8215464736f6c63430008190033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 RETURNDATACOPY CALLDATALOAD DUP16 0xDB SHR PREVRANDAO TIMESTAMP INVALID 0x26 SSTORE 0xE0 EXTCODEHASH STOP DUP12 PUSH13 0xFC7EA4D552A92D27E8571E5D51 SWAP3 0xD8 0x21 SLOAD PUSH5 0x736F6C6343 STOP ADDMOD NOT STOP CALLER ",
+			"sourceMap": "2428:6551:0:-:0;;;;;;;;;;;;;;;;;;;"
 		},
 		"deployedBytecode": {
 			"functionDebugData": {},
 			"generatedSources": [],
 			"immutableReferences": {},
 			"linkReferences": {},
-			"object": "",
-			"opcodes": "",
-			"sourceMap": ""
+			"object": "60806040525f80fdfea26469706673582212203e358fdb1c4442fe2655e03f008b6cfc7ea4d552a92d27e8571e5d5192d8215464736f6c63430008190033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 RETURNDATACOPY CALLDATALOAD DUP16 0xDB SHR PREVRANDAO TIMESTAMP INVALID 0x26 SSTORE 0xE0 EXTCODEHASH STOP DUP12 PUSH13 0xFC7EA4D552A92D27E8571E5D51 SWAP3 0xD8 0x21 SLOAD PUSH5 0x736F6C6343 STOP ADDMOD NOT STOP CALLER ",
+			"sourceMap": "2428:6551:0:-:0;;;;;"
 		},
-		"gasEstimates": null,
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "12400",
+				"executionCost": "64",
+				"totalCost": "12464"
+			},
+			"internal": {
+				"_checkInitializing()": "infinite",
+				"_disableInitializers()": "infinite",
+				"_getInitializableStorage()": "infinite",
+				"_getInitializedVersion()": "infinite",
+				"_isInitializing()": "infinite"
+			}
+		},
 		"methodIdentifiers": {}
 	},
 	"abi": [

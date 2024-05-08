@@ -76,11 +76,11 @@
 	},
 	"sources": {
 		"contracts/proxy/utils/Initializable.sol": {
-			"keccak256": "0x631188737069917d2f909d29ce62c4d48611d326686ba6683e26b72a23bfac0b",
+			"keccak256": "0xd6315eca512b6907b2b58cb29b594dd61cdb323ba6117688b8a5198282100847",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7a61054ae84cd6c4d04c0c4450ba1d6de41e27e0a2c4f1bcdf58f796b401c609",
-				"dweb:/ipfs/QmUvtdp7X1mRVyC3CsHrtPbgoqWaXHp3S1ZR24tpAQYJWM"
+				"bzz-raw://c4f1af2fff228fd184402144eef8b443382dce49d3cf15bb69e203af3a922754",
+				"dweb:/ipfs/QmeK9eghuFmLAoMZZmVUo5C3DuReCoKJeqnr3SjeWDKngd"
 			]
 		}
 	},
