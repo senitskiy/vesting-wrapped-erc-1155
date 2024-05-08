@@ -896,11 +896,11 @@
 			]
 		},
 		"upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol": {
-			"keccak256": "0xfaa10ae0ed480b307515b612dfb4669a1b86bc6b81f3eff9a36fd6d890050215",
+			"keccak256": "0xecb73058053603ab6ae6cd5c9962b64ce1917517f6d3b5ddc1fa7f0b4c562366",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1f38f0f9543d06bc69ab5a11ccb8f612afd679f67fdf8821d8515451cd4d2801",
-				"dweb:/ipfs/Qmf8LJHwZ6sdyP8R41MTrEouYo68fpntBiryQzQgvN6XnJ"
+				"bzz-raw://202ec5a763178a6099b705863eb7064abddd298936d99c8e6fc10c6d2a785081",
+				"dweb:/ipfs/QmQYWzBCHRDa2QmXBXcUkoutijXkoawYC5XSBfUpmaw66r"
 			]
 		},
 		"upgradeable/contracts/utils/ContextUpgradeable.sol": {

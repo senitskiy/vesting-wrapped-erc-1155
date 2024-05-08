@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "https://eips.ethereum.org/EIPS/eip-1167[ERC-1167] is a standard for deploying minimal proxy contracts, also known as \"clones\". > To simply and cheaply clone contract functionality in an immutable way, this standard specifies > a minimal bytecode implementation that delegates all calls to a known, fixed address. The library includes functions to deploy a proxy using either `create` (traditional deployment) or `create2` (salted deterministic deployment). It also includes functions to predict the addresses of clones deployed using the deterministic method.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/proxy/Clones.sol": "Clones"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/proxy/Clones.sol": {
+			"keccak256": "0x43dee2239d21ac5d9affbc5f93fe766b0aaea86145b2fd13c63beccbded073c3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://155a189da3d56a207faf151c027dcaeb354de2e8aca40dbd6c73f9db7c480a75",
+				"dweb:/ipfs/QmNwzYrBuTeDaoaSRNoqFVuiaXuLsDpbyq2f9KYCaV3QNQ"
+			]
+		},
+		"contracts/utils/Errors.sol": {
+			"keccak256": "0x1b0625096e82d06abdcf1844172ef78ef54a5e878761f4d905fda07eaf098424",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5cd99f1a4836c07461cb3ea023ae2f6d1d01e80694b764a87623aa7252754756",
+				"dweb:/ipfs/QmNPNDuiNU6TJatZcdBcrwixBoo5MSXNDq4kaXhpJLWGpB"
+			]
+		}
+	},
+	"version": 1
+}
