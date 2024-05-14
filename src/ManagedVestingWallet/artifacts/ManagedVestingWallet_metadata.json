@@ -1,0 +1,361 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					}
+				],
+				"name": "AddressEmptyCode",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "AddressInsufficientBalance",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "FailedInnerCall",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "SafeERC20FailedOperation",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "ERC20Released",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "duration",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "beneficiary_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "vestingManager_",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "releasable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "release",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					}
+				],
+				"name": "released",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "start",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint64",
+						"name": "timestamp",
+						"type": "uint64"
+					}
+				],
+				"name": "vestedAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vestingManager",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This contract derived from @openzeppelin\\VestingWallet and handles the vesting of Eth and ERC20 tokens for a given beneficiary. Start and duration can be configured by VestingManager.",
+			"errors": {
+				"AddressEmptyCode(address)": [
+					{
+						"details": "There's no code at `target` (it is not a contract)."
+					}
+				],
+				"AddressInsufficientBalance(address)": [
+					{
+						"details": "The ETH balance of the account is not enough to perform the operation."
+					}
+				],
+				"FailedInnerCall()": [
+					{
+						"details": "A call to an address target failed. The target may have reverted."
+					}
+				],
+				"SafeERC20FailedOperation(address)": [
+					{
+						"details": "An operation with an ERC20 token failed."
+					}
+				]
+			},
+			"kind": "dev",
+			"methods": {
+				"beneficiary()": {
+					"details": "Getter for the beneficiary address."
+				},
+				"duration()": {
+					"details": "Getter for the vesting duration."
+				},
+				"releasable(address)": {
+					"details": "Getter for the amount of releasable `token` tokens. `token` should be the address of an IERC20 contract."
+				},
+				"release(address)": {
+					"details": "Release the tokens that have already vested. Emits a {ERC20Released} event."
+				},
+				"released(address)": {
+					"details": "Amount of token already released"
+				},
+				"start()": {
+					"details": "Getter for the start timestamp."
+				},
+				"vestedAmount(address,uint64)": {
+					"details": "Calculates the amount of tokens that has already vested. Default implementation is a linear vesting curve."
+				}
+			},
+			"title": "ManagedVestingWallet",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/ManagedVestingWallet/ManagedVestingWallet.sol.sol": "ManagedVestingWallet"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c",
+				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+			"keccak256": "0x6008dabfe393240d73d7dd7688033f72740d570aa422254d29a7dce8568f3aff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f5196ec75139918c6c7bb4251b36395e668f1fa6d206beba7e7520e74913940d",
+				"dweb:/ipfs/QmSyqjksXxmm2mCG6qRd1yuwLykypkSVBbnBnGqJRcuJMi"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+			"keccak256": "0x37bb49513c49c87c4642a891b13b63571bc87013dde806617aa1efb54605f386",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3036b3a83b7c48f96641f2a9002b9f2dcb6a5958dd670894ada21ae8229b3d0",
+				"dweb:/ipfs/QmUNfSBdoVtjhETaUJCYcaC7pTMgbhht926tJ2uXJbiVd3"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0xaf28a975a78550e45f65e559a3ad6a5ad43b9b8a37366999abd1b7084eb70721",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7bd24e224f67f65bfadf85dc2929fa965456bb2415478bd0125471b5ce35245",
+				"dweb:/ipfs/QmRaydGr8BTHs1kvaZfsNU69pKzUAGFrvABn1KiRSbE51y"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"src/ManagedVestingWallet/ManagedVestingWallet.sol.sol": {
+			"keccak256": "0xa640a92ac4f8e342708c178c21b50b95822dcc945af65a1a79798b14f87c2907",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://96c287fd56bedafdd165a075be28b7613c500c6158b17fcc1f108808f179222a",
+				"dweb:/ipfs/QmR8GKCop5xFqSP2kMq4TMSwSHdPUdzQrVxFURxx666nNe"
+			]
+		},
+		"src/ManagedVestingWallet/VestingWallet.sol": {
+			"keccak256": "0x2b0cec8d4fdded12a248919a10ba669085aa5bdc3411c12adaec8feb331272ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1cd4f6f7fdec33feaedfbaba634fdfe6041f7c9ea971959767fe75df36e65a72",
+				"dweb:/ipfs/Qmb1Ja3Gk8vZVQd7mwMMspTLaYGpjL23ZZtu5iQSuFKrWk"
+			]
+		},
+		"src/ManagedVestingWallet/interfaces/IVestingManager.sol": {
+			"keccak256": "0x0267d169a2a0ee959e0ffe7f14e0d7800222f66ec6aa9159708e21b1f6a37376",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://77049e92183c20158b5d5fefa40f7a56a85ca2027dc6ba1917593a3e7f435005",
+				"dweb:/ipfs/QmbTEcyZ5tXYusdHFq4y1NQAANhCg6dq1biM1Nn8n2L6xi"
+			]
+		}
+	},
+	"version": 1
+}

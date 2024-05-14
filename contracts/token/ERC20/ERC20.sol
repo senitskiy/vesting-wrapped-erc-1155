@@ -45,7 +45,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
     constructor() { //string memory name_, string memory symbol_
         _name = "wrapVesting1155";
         _symbol = "WV1155";
-        _totalSupply = 1000000000000;
+        // _totalSupply = 1000000000000;
         
         _mint(_msgSender(), 1000000000000); 
     }

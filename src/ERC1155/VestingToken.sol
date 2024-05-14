@@ -4,7 +4,7 @@ pragma solidity ^0.8.18;
 import {IERC20, SafeERC20} from "../../contracts/token/ERC20/utils/SafeERC20.sol";
 // import {Initializable} from "../contracts/proxy/utils/Initializable.sol";
 // import {Initializable} from     "../../upgradeable/contracts/proxy/utils/Initializable.sol";
-import {Initializable, ERC20Upgradeable, ContextUpgradeable} from "../../upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
+import {, ERC20Upgradeable} from "../../upgradeable/contracts/token/ERC20/ERC20Upgradeable.sol";
 // import {ERC20} from "../contracts/token/ERC20/ERC20.sol";
 import {Vesting, Schedule} from "./IVestingToken.sol";
 
@@ -24,7 +24,7 @@ import {Arrays} from "../../contracts/utils/Arrays.sol";
  * @dev Код предоставлен исключительно в ознакомительных целях и не протестирован
  * Из контракта убрано все лишнее, включая некоторые проверки, геттеры/сеттеры и события
  */
-contract VestingToken is  ERC165, Initializable, ERC20Upgradeable, IERC1155, IERC1155MetadataURI, IERC1155Errors ,ContextUpgradeable{
+contract VestingToken is  ERC165, Initializable, ERC20Upgradeable, IERC1155, IERC1155MetadataURI, IERC1155Errors {
     
 // ContextUpgradeable, ERC165, IERC1155, IERC1155MetadataURI, IERC1155Errors, Initializable, ERC20Upgradeable {
     using SafeERC20 for IERC20;

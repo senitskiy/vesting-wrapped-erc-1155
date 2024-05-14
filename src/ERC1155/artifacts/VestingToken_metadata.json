@@ -1455,11 +1455,11 @@
 			]
 		},
 		"src/ERC1155/VestingToken.sol": {
-			"keccak256": "0xcde5b9a937136f0242ca55242d23f99e61f76fc71c08ae310ea3b3156d21da6a",
+			"keccak256": "0x37a1788d6fefcf75e04b7c6f7826ef7bbae0aff625ba9cec4756dc8e307fb47c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://62262092311842ef7a3a0f8cb5b6ceccb4dd7d9963d8167aeda3ead65ad3d427",
-				"dweb:/ipfs/QmT3jk55CDaQiRuG6FQyB7o5zCBFDArFBWcAZUdFiFgJvP"
+				"bzz-raw://0f0c9688cc957951d4ffcac42e2a991095795811a528582997ab4fbd480d000e",
+				"dweb:/ipfs/QmdNdMpXBLhtDpJeYN6jFDhzeUoxGq8vQDTa9F8MZf93JB"
 			]
 		},
 		"src/ERC1155/extensions/IERC1155MetadataURI.sol": {

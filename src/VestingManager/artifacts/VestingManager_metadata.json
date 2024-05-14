@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "duration",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "duration_",
+						"type": "uint64"
+					}
+				],
+				"name": "setDuration",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "start_",
+						"type": "uint64"
+					}
+				],
+				"name": "setStart",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "start",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/VestingManager/VestingManager.sol": "VestingManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/VestingManager/Ownable.sol": {
+			"keccak256": "0x3eb0ac7500d3381ecdaa17f3347a3904d676536381f31dd8025dcb5d205735dc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cde7d94513067088cf60da6e5f177f2e8b82533b575e896ae2ac539329e32c45",
+				"dweb:/ipfs/QmZpcNUWAExy6SbGCWeaJfnphfsNZQMjTYruFVq2DvS18o"
+			]
+		},
+		"src/VestingManager/VestingManager.sol": {
+			"keccak256": "0xa549057446d69f440f02023e5b3e28b73b5cb2cf7d1d8a41ac718d2c2c7d4d1f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3f8ff799f4c67b85ac27db5fac676c3667571ef014b3ac28d3dc160d487de13",
+				"dweb:/ipfs/QmcHktJWquWxX2i9m4ifWwnTJEr2cgPv8qM4XB58M4otik"
+			]
+		},
+		"src/VestingManager/interfaces/IVestingManager.sol": {
+			"keccak256": "0x0267d169a2a0ee959e0ffe7f14e0d7800222f66ec6aa9159708e21b1f6a37376",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://77049e92183c20158b5d5fefa40f7a56a85ca2027dc6ba1917593a3e7f435005",
+				"dweb:/ipfs/QmbTEcyZ5tXYusdHFq4y1NQAANhCg6dq1biM1Nn8n2L6xi"
+			]
+		},
+		"src/VestingManager/utils/Context.sol": {
+			"keccak256": "0x2d9821ede311a3c16183811be8bdc666e88c69d9d50321e3dff025fe7630d373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3719bc7fe267a79e84641b88901b10dbc58d27edaea65b7811d39ca7d2a3e409",
+				"dweb:/ipfs/QmRDDpaByM3MhWs61gXmfaxoygifCJhLvguEFDGahhWMfX"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Wrappers around ERC20 operations that throw on failure (when the token contract returns false). Tokens that return no value (and instead revert or throw on failure) are also supported, non-reverting calls are assumed to be successful. To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract, which allows you to call the safe operations as `token.safeTransfer(...)`, etc.",
+			"kind": "dev",
+			"methods": {},
+			"title": "SafeERC20",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ManagedVestingWallet/SafeERC20.sol": "SafeERC20"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ManagedVestingWallet/IERC20.sol": {
+			"keccak256": "0xc1290610aec42ee2c1df247fb5ee2d82e976178fb906f701d34f6b656f1b052e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://07025f5f368b572cdcb785e42d142cdbb10acaa0d0168d288d30c25201a7a289",
+				"dweb:/ipfs/QmeSy22Ruxo56qH4GkUJU4SEEv6PsAnzny8MpMGnPkXksc"
+			]
+		},
+		"ManagedVestingWallet/SafeERC20.sol": {
+			"keccak256": "0xac9620363869238a2618efa2e76f5d5efa16523e2234db6e4bcbe51ac4e5120a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f6e18af9f0f6ce78602727fa1e70f04d9a642f33caef3b1b298cdfab8ab5ab1",
+				"dweb:/ipfs/QmbErCexG5qgY2XmFKtRpjtLucNaGR44GnwmCPj9sJJrgS"
+			]
+		},
+		"ManagedVestingWallet/extensions/draft-IERC20Permit.sol": {
+			"keccak256": "0x9afa8d4740d0c343672e6a02374c85c1e8e70cc01163cc919ac91d191abd05e2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://460a9a351f18515ec191361d8221f3123e519121efc2228fbbfbcc54dad0ad0e",
+				"dweb:/ipfs/QmaNRgWGV34XzFUisYvSfzkRqAntGsRb5F6sVV4hZ1LFbL"
+			]
+		},
+		"ManagedVestingWallet/utils/Address.sol": {
+			"keccak256": "0x2b03d8ad427815b31d98bcbd044c91e90927abdb593b417112761b36850cd115",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b421a1eafe5022e9367743a1a8daea22672f95176a339b2f76f6fd375c2cc93",
+				"dweb:/ipfs/QmXQtm4Z8ZN9v46WxTphXq5wHHwB4FLoaP5swX9G7BmrrE"
+			]
+		}
+	},
+	"version": 1
+}
